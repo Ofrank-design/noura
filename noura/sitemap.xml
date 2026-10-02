@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://noura.example/index.html</loc></url>
+  <url><loc>https://noura.example/approach.html</loc></url>
+  <url><loc>https://noura.example/services.html</loc></url>
+  <url><loc>https://noura.example/programs.html</loc></url>
+  <url><loc>https://noura.example/recipes.html</loc></url>
+  <url><loc>https://noura.example/journal.html</loc></url>
+  <url><loc>https://noura.example/about.html</loc></url>
+  <url><loc>https://noura.example/assessment.html</loc></url>
+  <url><loc>https://noura.example/intelligence.html</loc></url>
+  <url><loc>https://noura.example/book.html</loc></url>
+  <url><loc>https://noura.example/privacy.html</loc></url>
+  <url><loc>https://noura.example/terms.html</loc></url>
+  <url><loc>https://noura.example/program.html?slug=reset</loc></url>
+  <url><loc>https://noura.example/program.html?slug=balance</loc></url>
+  <url><loc>https://noura.example/program.html?slug=metabolic</loc></url>
+  <url><loc>https://noura.example/program.html?slug=private</loc></url>
+</urlset>

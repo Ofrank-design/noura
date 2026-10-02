@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe | NOURA</title>
+<meta name="description" content="A dietitian written recipe with ingredients, method, nutrition information, allergens and swaps.">
+<meta name="theme-color" content="#F7F2E9">
+<link rel="canonical" href="https://noura.example/recipe.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NOURA">
+<meta property="og:title" content="Recipe | NOURA">
+<meta property="og:description" content="A dietitian written recipe with ingredients, method, nutrition information, allergens and swaps.">
+<meta property="og:image" content="https://noura.example/media/brand/social_share.jpg">
+<meta property="og:url" content="https://noura.example/recipe.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%233A4330'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23F7F2E9'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html" aria-label="NOURA home">NOURA<small>Registered Dietitians</small></a>
+    <nav class="nav" aria-label="Primary"><a href="approach.html">Approach</a><a href="services.html">Services</a><a href="programs.html">Programs</a><a href="recipes.html">Recipes</a><a href="journal.html">Journal</a><a href="about.html">About</a><a href="signin.html">Sign in</a><a class="btn btn-primary" href="book.html">Book a consultation</a></nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer"><a href="approach.html">Approach</a><a href="services.html">Services</a><a href="programs.html">Programs</a><a href="recipes.html">Recipes</a><a href="journal.html">Journal</a><a href="about.html">About</a><a href="assessment.html">Nutrition Assessment</a><a href="intelligence.html">NOURA Intelligence</a><a href="signin.html">Sign in</a><a class="btn btn-primary" href="book.html">Book a consultation</a></div>
+<main id="main">
+
+<section class="page-hero" style="padding-bottom:30px;"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="recipes.html">Recipes</a> / <span id="rCrumb">Recipe</span></div></div></section>
+<section class="section tight" style="padding-top:20px;"><div class="wrap split top">
+  <div class="reveal" id="rMedia"></div>
+  <div class="reveal d1">
+    <div class="tagrow" id="rTags" style="margin-bottom:22px;"></div>
+    <h1 id="rTitle" style="font-size:clamp(40px,4.6vw,68px);margin-bottom:20px;"></h1>
+    <p class="lead" id="rBlurb"></p>
+    <div class="recipe-facts"><div><b id="fPrep"></b><small>Prep</small></div><div><b id="fCook"></b><small>Cook</small></div><div><b id="fServ"></b><small>Serves</small></div><div><b id="fCal"></b><small>Calories</small></div></div>
+    <div class="actions">
+      <button class="btn btn-primary btn-sm" id="save" type="button">Save recipe</button>
+      <button class="btn btn-outline btn-sm" id="plan" type="button">Add to meal plan</button>
+      <button class="btn btn-outline btn-sm" id="shop" type="button">Add to shopping list</button>
+      <button class="btn btn-outline btn-sm no-print" id="print" type="button">Print</button>
+    </div>
+  </div>
+</div></section>
+<section class="section cream"><div class="wrap split top wide-right">
+  <div class="reveal">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:10px;"><h2 style="font-size:clamp(30px,3vw,42px);">Ingredients</h2>
+      <div class="chips" aria-label="Adjust servings"><button class="btn btn-outline btn-sm" id="minus" type="button" aria-label="Fewer servings">&minus;</button><span id="servLabel" style="align-self:center;font-weight:600;min-width:84px;text-align:center;"></span><button class="btn btn-outline btn-sm" id="plus" type="button" aria-label="More servings">+</button></div></div>
+    <ul class="ing" id="rIng"></ul>
+  </div>
+  <div class="reveal d1"><h2 style="font-size:clamp(30px,3vw,42px);margin-bottom:10px;">Method</h2><ol class="method" id="rSteps"></ol></div>
+</div></section>
+<section class="section"><div class="wrap split top">
+  <div class="reveal"><span class="eyebrow">Nutrition per serving</span><div class="nutri" id="rNutri"></div><p class="fine" style="margin-top:14px;">Values are estimates and vary with brands and portions.</p></div>
+  <div class="reveal d1"><span class="eyebrow">Allergens</span><div class="tagrow" id="rAllergens" style="margin-bottom:34px;"></div><span class="eyebrow">Swaps and substitutions</span><ul class="ticks" id="rSwaps"></ul></div>
+</div></section>
+<section class="section paper"><div class="wrap"><div class="section-head reveal"><span class="eyebrow">More to cook</span><h2>You might also like.</h2></div><div class="grid-4" id="rMore"></div></div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">NOURA<small>Registered Dietitians</small></a>
+        <p>Nutrition, made personal. A private dietetics practice in Santa Monica, with telehealth appointments available.</p>
+        <form class="newsletter" aria-label="Newsletter signup"><label class="sr-only" for="nl">Email address</label><input id="nl" type="email" placeholder="Your email address" required><button class="btn btn-light btn-sm" type="submit">Join The Notebook</button></form>
+      </div>
+      <div><h4>Practice</h4><ul><li><a href="about.html">About</a></li><li><a href="approach.html">Approach</a></li><li><a href="services.html">Services</a></li><li><a href="programs.html">Programs</a></li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="recipes.html">Recipes</a></li><li><a href="journal.html">Journal</a></li><li><a href="assessment.html">Nutrition Assessment</a></li><li><a href="intelligence.html">NOURA Intelligence</a></li></ul></div>
+      <div><h4>Clients</h4><ul><li><a href="book.html">Book a consultation</a></li><li><a href="signin.html">Sign in</a></li><li><a href="mailto:hello@noura.example">hello@noura.example</a></li><li>+1 310 555 0148</li><li>14 Cypress Lane, Suite 2<br>Santa Monica, California</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>Information on this site is educational and does not replace individual medical advice. NOURA is a concept practice created for demonstration, and its practitioners, client stories and credentials are fictional.</p>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    </div>
+    <p class="fine" style="color:rgba(247,242,233,.45);margin-top:18px;">&copy; 2026 NOURA. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/imageRegistry.js"></script>
+<script src="js/data.js"></script>
+<script src="js/recipes.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function(){
+  const r = getRecipe(qs("id")) || RECIPES[0];
+  let serv = r.servings;
+  document.title = r.title + " | NOURA";
+  document.getElementById("rCrumb").textContent = r.title;
+  document.getElementById("rMedia").innerHTML = mediaFrame(r.media, "ratio-4x5 arch-soft", { eager: true });
+  document.getElementById("rTags").innerHTML = r.cats.slice(0, 5).map((c) => `<span>${esc(c)}</span>`).join("");
+  document.getElementById("rTitle").textContent = r.title;
+  document.getElementById("rBlurb").textContent = r.blurb;
+  document.getElementById("fPrep").textContent = r.prep + " min";
+  document.getElementById("fCook").textContent = r.cook ? r.cook + " min" : "None";
+  document.getElementById("fServ").textContent = r.servings;
+  document.getElementById("fCal").textContent = r.nutrition.cal;
+  document.getElementById("rSteps").innerHTML = r.steps.map((s) => `<li>${esc(s)}</li>`).join("");
+  const n = r.nutrition;
+  document.getElementById("rNutri").innerHTML = [["Calories", n.cal], ["Protein", n.protein + " g"], ["Carbs", n.carbs + " g"], ["Fat", n.fat + " g"], ["Fiber", n.fiber + " g"]].map(([k, v]) => `<div><b>${v}</b><small>${k}</small></div>`).join("");
+  document.getElementById("rAllergens").innerHTML = r.allergens.length ? r.allergens.map((a) => `<span class="warn">${esc(a)}</span>`).join("") : "<span>No major allergens</span>";
+  document.getElementById("rSwaps").innerHTML = r.swaps.map((s) => `<li>${esc(s)}</li>`).join("");
+  function ings(){
+    const scale = serv / r.servings;
+    document.getElementById("servLabel").textContent = serv + (serv === 1 ? " serving" : " servings");
+    document.getElementById("rIng").innerHTML = r.ingredients.map((i) => `<li><b>${formatQty({ q: i.q * scale, u: i.u })}</b><span>${esc(i.item)}</span></li>`).join("");
+  }
+  ings();
+  document.getElementById("minus").addEventListener("click", () => { serv = Math.max(1, serv - 1); ings(); });
+  document.getElementById("plus").addEventListener("click", () => { serv = Math.min(24, serv + 1); ings(); });
+  const save = document.getElementById("save");
+  function paintSave(){ save.textContent = Store.get("savedRecipes", []).includes(r.id) ? "Saved" : "Save recipe"; }
+  paintSave();
+  save.addEventListener("click", () => { let s = Store.get("savedRecipes", []); s = s.includes(r.id) ? s.filter((x) => x !== r.id) : s.concat(r.id); Store.set("savedRecipes", s); paintSave(); toast(s.includes(r.id) ? "Saved to your recipes." : "Removed from saved recipes."); });
+  document.getElementById("plan").addEventListener("click", () => { Store.push("extraPlan", { id: r.id, servings: serv, at: Date.now() }); toast("Added to your meal plan. Your dietitian can see it at your next review."); });
+  document.getElementById("shop").addEventListener("click", () => { Store.push("shoppingExtras", { id: r.id, servings: serv, at: Date.now() }); toast("Ingredients added to your shopping list."); });
+  document.getElementById("print").addEventListener("click", () => window.print());
+  document.getElementById("rMore").innerHTML = RECIPES.filter((x) => x.id !== r.id && x.cats.some((c) => r.cats.includes(c))).slice(0, 4).map(recipeCard).join("");
+  hydrateMedia();
+})();
+</script>
+</body>
+</html>
