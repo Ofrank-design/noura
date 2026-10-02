@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /portal.html
-Disallow: /dashboard.html
-
-Sitemap: https://noura.example/sitemap.xml
